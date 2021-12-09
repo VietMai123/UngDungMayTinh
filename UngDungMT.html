@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amout</th>
+            <th>Fromcurency</th>
+            <th>Tocurency</th>
+
+        </tr>
+        <tr>
+            <th><input type="number" id="amout"></th>
+            <th>
+                <select name="fromcurency" id="fromcurency">
+                    <option value="vnd">VietNam</option>
+                </select>
+            </th>
+            <th>
+                <select name="tocurency" id="tocurency">
+                    <option value="usd">USD</option>
+                </select>
+            </th>
+            <th><input type="button" value="Convert"onclick="display()"></th>
+        </tr>
+
+
+    </table>
+    <p id="result">Result = </p>
+    <script>
+        function display() {
+            let a = document.getElementById("amout").value;
+            let result = a*23000;
+            document.getElementById("result").innerHTML="resul= "  +result;
+        }
+
+    </script>
+</form>
+</body>
+</html>
